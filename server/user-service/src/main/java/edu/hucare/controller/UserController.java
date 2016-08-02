@@ -3,10 +3,7 @@ package edu.hucare.controller;
 import edu.hucare.model.User;
 import edu.hucare.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by Kuzon on 7/28/2016.
@@ -23,6 +20,7 @@ public class UserController {
 
     /**
      * Entrance of User Service
+     *
      * @return String "User Service"
      */
     @RequestMapping("")
@@ -33,6 +31,7 @@ public class UserController {
     /**
      * User Login
      * Find user at databases by email
+     *
      * @param user
      * @return a user model if request info correct or null when incorrect
      */
@@ -48,4 +47,14 @@ public class UserController {
         }
     }
 
+    /**
+     * Find a user by user id
+     *
+     * @param user_id
+     * @return User
+     */
+    @RequestMapping(value = "/{user_id}")
+    public User getUser(@PathVariable long user_id) {
+        return repository.findOne(user_id);
+    }
 }
