@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: org.springframework.cloud:spring-cloud-starter-archaius:1.1.6.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-archaius/1.1.6.BUILD-SNAPSHOT/78f7535b08526d208f31edcb2d1ed599f9f4258d/spring-cloud-starter-archaius-1.1.6.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-archaius/1.1.6.BUILD-SNAPSHOT/d31b0fd79d174320c187b805554183275cd492fb/spring-cloud-starter-archaius-1.1.6.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-archaius/1.1.6.BUILD-SNAPSHOT/afa39e692b5708b08a600225f3e27d35f33fe975/spring-cloud-starter-archaius-1.1.6.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-archaius/1.1.6.BUILD-SNAPSHOT/2718e626f51b28bd6b15dfcf3eb2b05c8e31f403/spring-cloud-starter-archaius-1.1.6.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
