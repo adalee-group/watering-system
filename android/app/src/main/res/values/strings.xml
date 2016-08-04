@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Watering</string>
+    <string name="app_name">浇水</string>
+    <string name="welcome_btn_enter">开始</string>
 </resources>
