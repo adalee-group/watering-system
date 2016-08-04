@@ -1,8 +1,8 @@
 package edu.hucare.watering;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
@@ -24,7 +24,8 @@ public class LoginActivity extends Activity {
 
     @Click
     void btnSignIn() {
-        Toast.makeText(getApplicationContext(), "Button is clicked", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this, DeviceActivity_.class);
+        startActivity(intent);
     }
 
 }
