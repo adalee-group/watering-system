@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f91b1379-e824-4c88-8ebf-704049f0440a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/drawable/water.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-hdpi/flower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-mdpi/flower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xhdpi/flower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxhdpi/flower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxxhdpi/flower.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/LoginActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/layout/activity_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/build.gradle" afterPath="$PROJECT_DIR$/../../android/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../../android/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/WelcomeActivity.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/WelcomeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/res/layout/activity_welcome.xml" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/layout/activity_welcome.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/test/java/edu/hucare/watering/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/../../android/app/src/test/java/edu/hucare/watering/ExampleUnitTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../schedule-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../schedule-service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../user-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../user-service/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="f91b1379-e824-4c88-8ebf-704049f0440a" name="Default" comment="" />
     <ignored path="device-service.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1006,12 +987,12 @@
       <workItem from="1470189239399" duration="2771000" />
       <workItem from="1470262752661" duration="51000" />
       <workItem from="1470262892651" duration="579000" />
-      <workItem from="1470288275691" duration="96000" />
+      <workItem from="1470288275691" duration="408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16902000" />
+    <option name="totallyTimeSpent" value="17214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />

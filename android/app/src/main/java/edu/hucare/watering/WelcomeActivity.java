@@ -9,12 +9,6 @@ import org.androidannotations.annotations.EActivity;
 @EActivity(R.layout.activity_welcome)
 public class WelcomeActivity extends AppCompatActivity {
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_welcome);
-//    }
-
     @Click
     void btnEnter() {
         Intent login = new Intent(this, LoginActivity_.class);
