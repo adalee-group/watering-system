@@ -1,17 +1,28 @@
 package edu.hucare.watering;
 
-import android.app.Activity;
+import android.content.Context;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 
 import org.androidannotations.annotations.EActivity;
 
+import edu.hucare.model.User;
+
 @EActivity(R.layout.activity_device)
-public class DeviceActivity extends Activity {
+public class DeviceActivity extends LinearLayout {
 
 
     String[] listDevice;
 
     private ListAdapter adapter;
+
+    public DeviceActivity(Context context) {
+        super(context);
+    }
+
+    public void bind(User user) {
+
+    }
 
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
