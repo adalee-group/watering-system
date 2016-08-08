@@ -1,47 +1,34 @@
 package edu.hucare.watering;
 
-import android.content.Context;
-import android.widget.LinearLayout;
-import android.widget.ListAdapter;
+import android.app.Activity;
+import android.widget.ListView;
+import android.widget.Toast;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ItemClick;
+import org.androidannotations.annotations.ViewById;
 
-import edu.hucare.model.User;
+import edu.hucare.adapter.TerminalAdapter;
+import edu.hucare.model.TerminalDevice;
 
 @EActivity(R.layout.activity_device)
-public class DeviceActivity extends LinearLayout {
+public class DeviceActivity extends Activity {
+    @ViewById
+    ListView device_list;
 
+    @Bean
+    TerminalAdapter adapter;
 
-    String[] listDevice;
-
-    private ListAdapter adapter;
-
-    public DeviceActivity(Context context) {
-        super(context);
+    @AfterViews
+    void bindAdapter() {
+        device_list.setAdapter(adapter);
     }
 
-    public void bind(User user) {
-
+    @ItemClick
+    void deviceListItemClicked(TerminalDevice device) {
+        Toast.makeText(this, "Clicked:" + device.getId(), Toast.LENGTH_SHORT).show();
     }
-
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_device);
-////        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-////        setSupportActionBar(toolbar);
-//
-//        adapter = new ArrayAdapter<String>(this, R.layout.content_device, listDevice);
-//
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-//    }
-
 
 }
