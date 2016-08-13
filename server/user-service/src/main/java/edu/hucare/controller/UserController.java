@@ -14,7 +14,7 @@ import java.util.Set;
  * Created by Kuzon on 7/28/2016.
  */
 @RestController
-@RequestMapping(value = "/user")
+//@RequestMapping(value = "/user")
 public class UserController {
 
     /**

@@ -12,7 +12,7 @@ import java.util.Set;
  * Created by Kuzon on 8/2/2016.
  */
 @RestController
-@RequestMapping("/terminal")
+//@RequestMapping("/terminal")
 public class TerminalDeviceController {
 
     @Autowired

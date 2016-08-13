@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
  * Created by Kuzon on 8/2/2016.
  */
 @RestController
-@RequestMapping("/schedule")
+//@RequestMapping("/schedule")
 public class ScheduleController {
 
     @Autowired
