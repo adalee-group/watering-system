@@ -18,6 +18,7 @@ public class ControlDevice {
     private String name;
 
     @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     @OneToMany(mappedBy = "control")

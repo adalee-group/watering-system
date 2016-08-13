@@ -25,6 +25,7 @@ public class TerminalDevice {
     private double moisture;
 
     @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     @OneToMany(mappedBy = "terminal")

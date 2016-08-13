@@ -23,12 +23,15 @@ public class Schedule {
     private String status;
 
     @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     @ManyToOne
+    @JoinColumn(name = "terminal_id")
     private TerminalDevice terminal;
 
     @ManyToOne
+    @JoinColumn(name = "control_id")
     private ControlDevice control;
 
     public Schedule() {
