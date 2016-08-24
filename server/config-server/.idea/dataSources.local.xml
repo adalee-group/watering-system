@@ -2,6 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="MySQL - water@localhost" uuid="d16d9931-a7f3-4979-abd7-3de3a92af7b2">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
       <secret-storage>master_key</secret-storage>
       <user-name>homestead</user-name>
       <introspection-scope>water:</introspection-scope>
