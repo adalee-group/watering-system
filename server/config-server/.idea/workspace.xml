@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18bc36a2-90d3-4002-8f11-536833a80326" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/UserRepository.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/UserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/TerminalImpl.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/TerminalImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/UserImpl.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/UserImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/LoginActivity.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" />
@@ -1071,7 +1072,7 @@
       <workItem from="1472792813347" duration="839000" />
       <workItem from="1472806051037" duration="661000" />
       <workItem from="1473150105849" duration="3450000" />
-      <workItem from="1473217345744" duration="2465000" />
+      <workItem from="1473217345744" duration="3095000" />
     </task>
     <task id="LOCAL-00001" summary="Add a eureka config server">
       <created>1469626044795</created>
@@ -1136,11 +1137,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473220053014</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed android login">
+      <created>1473225663148</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1473225663148</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36701000" />
+    <option name="totallyTimeSpent" value="37331000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1228,7 +1236,8 @@
     <MESSAGE value="Move API gateway to correct place" />
     <MESSAGE value="Add a rest template on android, not working yet." />
     <MESSAGE value="Android POST works." />
-    <option name="LAST_COMMIT_MESSAGE" value="Android POST works." />
+    <MESSAGE value="Fixed android login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed android login" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

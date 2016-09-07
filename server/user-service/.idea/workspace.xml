@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2dc62a05-b058-4538-9dd7-5f9634001eed" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/UserRepository.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/UserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/TerminalImpl.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/TerminalImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/UserImpl.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/UserImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/LoginActivity.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" />
@@ -65,11 +66,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/hucare/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+            <state relative-caret-position="284">
+              <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4f44ade9-9ad0-4851-89ac-76485a4a757a/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="92" selection-start-line="5" selection-start-column="92" selection-end-line="5" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -80,16 +91,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4f44ade9-9ad0-4851-89ac-76485a4a757a/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -1228,7 +1229,7 @@
       <workItem from="1471926186952" duration="575000" />
       <workItem from="1472049997352" duration="562000" />
       <workItem from="1473150260813" duration="5268000" />
-      <workItem from="1473217354315" duration="3522000" />
+      <workItem from="1473217354315" duration="5697000" />
     </task>
     <task id="LOCAL-00001" summary="User service done">
       <created>1470115625824</created>
@@ -1241,7 +1242,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45180000" />
+    <option name="totallyTimeSpent" value="47355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="993" extended-state="6" />
@@ -1758,14 +1759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4f44ade9-9ad0-4851-89ac-76485a4a757a/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/hucare/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1776,8 +1769,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/hucare/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+        <state relative-caret-position="284">
+          <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4f44ade9-9ad0-4851-89ac-76485a4a757a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="92" selection-start-line="5" selection-start-column="92" selection-end-line="5" selection-end-column="92" />
           <folding />
         </state>
       </provider>

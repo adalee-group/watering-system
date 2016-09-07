@@ -23,6 +23,8 @@ import edu.hucare.repository.impl.UserImpl;
 @EActivity(R.layout.activity_login)
 public class LoginActivity extends Activity {
 
+    public static User user;
+
 
     // UI references.
     @ViewById
@@ -33,18 +35,6 @@ public class LoginActivity extends Activity {
 
     @Click
     void btnSignIn() {
-
-//        User origin = new User();
-//        origin.setEmail(etEmail.getText().toString());
-//        origin.setPassword(etPassword.getText().toString());
-//        UserImpl userImpl = new UserImpl();
-//        try {
-//            userImpl.findOne(origin);
-//            Intent intent = new Intent(this, DeviceActivity_.class);
-//            startActivity(intent);
-//        } catch (Exception e) {
-//            Toast.makeText(getApplicationContext(), "用户名密码错误", Toast.LENGTH_SHORT).show();
-//        }
 
 
         try {
@@ -86,6 +76,7 @@ public class LoginActivity extends Activity {
 
                 User user = restTemplate.postForObject(url, users[0], User.class);
                 isSuccessful = true;
+                LoginActivity.user = user;
                 return user;
             } catch (Exception e) {
                 e.printStackTrace();

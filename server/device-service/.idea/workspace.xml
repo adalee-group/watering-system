@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f91b1379-e824-4c88-8ebf-704049f0440a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/UserRepository.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/UserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/TerminalImpl.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/TerminalImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/UserImpl.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/UserImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/LoginActivity.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" />

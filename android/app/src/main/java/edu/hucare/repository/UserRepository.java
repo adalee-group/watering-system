@@ -11,6 +11,4 @@ import edu.hucare.model.User;
  */
 public interface UserRepository {
     Set<User> findAll();
-
-    User findOne(User user);
 }
