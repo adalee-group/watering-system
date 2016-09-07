@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
@@ -14,6 +15,7 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.web.client.RestTemplate;
 
 import edu.hucare.model.User;
+import edu.hucare.repository.impl.UserImpl;
 
 /**
  * A login screen that offers login via email/password.
@@ -32,57 +34,63 @@ public class LoginActivity extends Activity {
     @Click
     void btnSignIn() {
 
+//        User origin = new User();
+//        origin.setEmail(etEmail.getText().toString());
+//        origin.setPassword(etPassword.getText().toString());
+//        UserImpl userImpl = new UserImpl();
+//        try {
+//            userImpl.findOne(origin);
+//            Intent intent = new Intent(this, DeviceActivity_.class);
+//            startActivity(intent);
+//        } catch (Exception e) {
+//            Toast.makeText(getApplicationContext(), "用户名密码错误", Toast.LENGTH_SHORT).show();
+//        }
+
+
         try {
             User origin = new User();
             origin.setEmail(etEmail.getText().toString());
             origin.setPassword(etPassword.getText().toString());
-            new DoLogin().execute(origin);
-            Intent intent = new Intent(this, DeviceActivity_.class);
-            startActivity(intent);
+
+            DoLogin doLogin = new DoLogin();
+            doLogin.execute(origin);
+            Thread.sleep(5000);
+            if (doLogin.isSuccessful()) {
+                Intent intent = new Intent(this, DeviceActivity_.class);
+                startActivity(intent);
+            } else {
+                Toast.makeText(getApplicationContext(), "用户名密码错误", Toast.LENGTH_SHORT).show();
+            }
         } catch (Exception e) {
             e.printStackTrace();
+            Toast.makeText(getApplicationContext(), "系统错误", Toast.LENGTH_SHORT).show();
         }
 
 
     }
 
-    public User login() {
-        final String url = "http://192.168.10.108:1984/user/";
-        User origin = new User();
-        origin.setEmail(etEmail.getText().toString());
-        origin.setPassword(etPassword.getText().toString());
-
-        RestTemplate restTemplate = new RestTemplate();
-
-        restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
-        restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
-
-        User user = restTemplate.postForObject(url, origin, User.class);
-
-        return user;
-    }
-
     class DoLogin extends AsyncTask<User, User, User> {
 
+        private boolean isSuccessful = false;
+
+        public boolean isSuccessful() {
+            return isSuccessful;
+        }
 
         protected User doInBackground(User... users) {
-
             try {
 
                 final String url = "http://192.168.10.108:1984/user/";
 
-
                 RestTemplate restTemplate = new RestTemplate();
 
-//                restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
-//                restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
-
                 User user = restTemplate.postForObject(url, users[0], User.class);
+                isSuccessful = true;
                 return user;
             } catch (Exception e) {
                 e.printStackTrace();
+                isSuccessful = false;
             }
-
             return null;
         }
 

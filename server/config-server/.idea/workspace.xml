@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18bc36a2-90d3-4002-8f11-536833a80326" name="Default" comment="Add a rest template on android, not working yet.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../user-service/.idea/dataSources/4f44ade9-9ad0-4851-89ac-76485a4a757a.xml" />
+    <list default="true" id="18bc36a2-90d3-4002-8f11-536833a80326" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/UserRepository.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/UserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/UserImpl.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/repository/impl/UserImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/LoginActivity.java" afterPath="$PROJECT_DIR$/../../android/app/src/main/java/edu/hucare/watering/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../device-service/.idea/modules/device-service_test.iml" afterPath="$PROJECT_DIR$/../device-service/.idea/modules/device-service_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../device-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../device-service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../schedule-service/.idea/modules/schedule-service_test.iml" afterPath="$PROJECT_DIR$/../schedule-service/.idea/modules/schedule-service_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../schedule-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../schedule-service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../user-service/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/../user-service/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../user-service/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/../user-service/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../user-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../user-service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../user-service/src/main/java/edu/hucare/controller/UserController.java" afterPath="$PROJECT_DIR$/../user-service/src/main/java/edu/hucare/controller/UserController.java" />
     </list>
     <ignored path="config-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,8 +85,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+            <state relative-caret-position="114">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -1075,7 +1071,7 @@
       <workItem from="1472792813347" duration="839000" />
       <workItem from="1472806051037" duration="661000" />
       <workItem from="1473150105849" duration="3450000" />
-      <workItem from="1473217345744" duration="1219000" />
+      <workItem from="1473217345744" duration="2465000" />
     </task>
     <task id="LOCAL-00001" summary="Add a eureka config server">
       <created>1469626044795</created>
@@ -1133,11 +1129,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473173728835</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Android POST works.">
+      <created>1473220053014</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1473220053014</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35455000" />
+    <option name="totallyTimeSpent" value="36701000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1150,7 +1153,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="175" y="206" width="1382" height="754" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1161,7 +1164,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47400612" sideWeight="0.502994" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47400612" sideWeight="0.497006" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3409786" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3409786" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1224,7 +1227,8 @@
     <MESSAGE value="Init Android" />
     <MESSAGE value="Move API gateway to correct place" />
     <MESSAGE value="Add a rest template on android, not working yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a rest template on android, not working yet." />
+    <MESSAGE value="Android POST works." />
+    <option name="LAST_COMMIT_MESSAGE" value="Android POST works." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1684,8 +1688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+        <state relative-caret-position="114">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding />
         </state>
       </provider>

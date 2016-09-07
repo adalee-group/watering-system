@@ -1,5 +1,7 @@
 package edu.hucare.repository;
 
+import android.os.AsyncTask;
+
 import java.util.Set;
 
 import edu.hucare.model.User;
@@ -9,4 +11,6 @@ import edu.hucare.model.User;
  */
 public interface UserRepository {
     Set<User> findAll();
+
+    User findOne(User user);
 }
