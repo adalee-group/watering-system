@@ -74,8 +74,8 @@ public class LoginActivity extends Activity {
 
                 RestTemplate restTemplate = new RestTemplate();
 
-                restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
-                restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
+//                restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+//                restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
 
                 User user = restTemplate.postForObject(url, users[0], User.class);
                 return user;

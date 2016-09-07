@@ -41,11 +41,9 @@ public class UserController {
      * @return a user model if request info correct or null when incorrect
      */
     @RequestMapping(value = "", method = RequestMethod.POST)
-    public User doLogin(@RequestHeader User user) {
-        User u = repository.findByEmail(user.getEmail());
-        if (u.equals(null)) {
-            return null;
-        } else if (u.getPassword().equals(user.getPassword())) {
+    public User doLogin(@RequestBody User user) {
+        User u = repository.findByEmail(user.getEmail().trim());
+        if (!u.equals(null) && u.getPassword().equals(user.getPassword())) {
             return u;
         } else {
             return null;
