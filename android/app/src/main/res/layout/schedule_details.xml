@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/schedule_id"
+            android:text="No. 1984"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/schedule_date"
+            android:text="2016年 09月 08日 星期四 15:54:44 CST"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/schedule_water"
+            android:text="5ml"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/schedule_status"
+            android:text="Good"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+</TableLayout>

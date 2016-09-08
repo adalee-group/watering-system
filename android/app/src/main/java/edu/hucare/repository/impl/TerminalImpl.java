@@ -16,17 +16,21 @@ import edu.hucare.repository.TerminalRepository;
 import edu.hucare.watering.LoginActivity;
 
 /**
- * Created by Kuzon on 8/8/2016.
+ * Created by Kuzon Chen on 8/8/2016.
  */
 @EBean
 public class TerminalImpl implements TerminalRepository {
 
+    // All devices
     TerminalDevice terminals[];
+
+    // One devices
+    TerminalDevice device;
 
     @Override
     public List<TerminalDevice> findAll() {
 
-        new GetDevices().execute(LoginActivity.user);
+        new GetAllDevices().execute(LoginActivity.user);
 
         try {
             Thread.sleep(3000);
@@ -41,19 +45,19 @@ public class TerminalImpl implements TerminalRepository {
             e.printStackTrace();
         }
 
-
-//        TerminalDevice terminal = new TerminalDevice();
-//        terminal.setId(new Long(1));
-//        terminal.setLastContact(new Date());
-//        terminal.setStatus("OK");
-//        terminal.setPlant("梅花");
-//        terminal.setMoisture(0.8);
-//
-//        devices.add(terminal);
         return null;
     }
 
-    class GetDevices extends AsyncTask<User, User, TerminalDevice[]> {
+    @Override
+    public TerminalDevice findOne() {
+        return null;
+    }
+
+    /**
+     * Get all devices by RESTFul API
+     * @author Kuzon Chen
+     */
+    class GetAllDevices extends AsyncTask<User, User, TerminalDevice[]> {
 
         private boolean isSuccessful = false;
 
@@ -64,7 +68,7 @@ public class TerminalImpl implements TerminalRepository {
         protected TerminalDevice[] doInBackground(User... users) {
             try {
 
-                final String url = "http://192.168.10.108:1984/user/m" + users[0].getId() + "/terminal";
+                final String url = "http://192.168.10.108:1984/user/" + users[0].getId() + "/terminal";
 
                 RestTemplate restTemplate = new RestTemplate();
 
@@ -78,9 +82,35 @@ public class TerminalImpl implements TerminalRepository {
             }
             return null;
         }
+    }
 
+    /**
+     * Get One Device by RESTFul API
+     * @author Kuzon Chen
+     */
+    class GetOneDevice extends AsyncTask<TerminalDevice, TerminalDevice, TerminalDevice> {
 
-        protected void onPostExecute(String file_url) {
+        private boolean isSuccessful = false;
+
+        public boolean isSuccessful() {
+            return isSuccessful;
+        }
+
+        protected TerminalDevice doInBackground(TerminalDevice... devices) {
+            try {
+
+                final String url = "http://192.168.10.108:1984/device/" + devices[0].getId() + "/status";
+
+                RestTemplate restTemplate = new RestTemplate();
+
+                device = restTemplate.getForObject(url, TerminalDevice.class);
+                isSuccessful = true;
+                return device;
+            } catch (Exception e) {
+                e.printStackTrace();
+                isSuccessful = false;
+            }
+            return null;
         }
     }
 }

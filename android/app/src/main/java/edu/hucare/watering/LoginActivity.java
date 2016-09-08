@@ -44,7 +44,18 @@ public class LoginActivity extends Activity {
 
             DoLogin doLogin = new DoLogin();
             doLogin.execute(origin);
-            Thread.sleep(5000);
+
+            long time_out = 5000;
+            long time_count = 0;
+
+            while (!doLogin.isSuccessful()) {
+                if (time_count>time_count) {
+                    Toast.makeText(getApplicationContext(), "请求超时", Toast.LENGTH_SHORT).show();
+                }
+                Thread.sleep(500);
+                time_count += 500;
+            }
+
             if (doLogin.isSuccessful()) {
                 Intent intent = new Intent(this, DeviceActivity_.class);
                 startActivity(intent);

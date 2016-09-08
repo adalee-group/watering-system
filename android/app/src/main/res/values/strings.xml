@@ -9,8 +9,17 @@
     <string name="prompt_email">电子邮件</string>
     <string name="prompt_password">密码</string>
     <string name="action_sign_in">登录</string>
+
+    <!-- Strings related to devices -->
     <string name="title_activity_device">设备</string>
-    <string name="title_activity_schedule">ScheduleActivity</string>
+
+    <!-- Strings related to schedule -->
+    <string name="title_activity_schedule">浇水计划</string>
+    <string name="schedule_label_id">编号</string>
+    <string name="schedule_label_date">日期</string>
+    <string name="schedule_label_water">水量</string>
+
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

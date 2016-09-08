@@ -63,6 +63,5 @@ public class TerminalAdapter extends BaseAdapter {
         terminalItemView.bind(getItem(i));
 
         return terminalItemView;
-//        return null;
     }
 }

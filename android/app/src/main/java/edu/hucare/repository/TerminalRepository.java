@@ -11,4 +11,6 @@ public interface TerminalRepository {
 
     List<TerminalDevice> findAll();
 
+    TerminalDevice findOne();
+
 }

@@ -39,6 +39,16 @@ public class TerminalDeviceController {
     }
 
     /**
+     * Get device status
+     *
+     * @param device_id
+     */
+    @RequestMapping(value = "/{device_id}/status", method = RequestMethod.GET)
+    public TerminalDevice getStatus(@PathVariable long device_id) {
+        return repository.findOne(device_id);
+    }
+
+    /**
      * Terminal status report
      *
      * @param device

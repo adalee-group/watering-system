@@ -20,7 +20,10 @@ public class TerminalItemView extends LinearLayout {
     TextView terminal_id;
 
     @ViewById
-    TextView terminal_status;
+    TextView plant;
+
+    @ViewById
+    TextView status;
 
     public TerminalItemView(Context context) {
         super(context);
@@ -28,6 +31,7 @@ public class TerminalItemView extends LinearLayout {
 
     public void bind(TerminalDevice device) {
         terminal_id.setText(String.valueOf(device.getId()));
-        terminal_status.setText(device.getStatus());
+        plant.setText(device.getPlant());
+        status.setText(device.getStatus());
     }
 }
