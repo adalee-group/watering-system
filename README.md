@@ -11,6 +11,7 @@
 
 * [Spring Cloud Netflix] - 包含这三个组件Eureka, Hystrix, Zuul
 * [MariaDB] - 开源关系型数据库
+* [docker] - 容器
 * [android] - 一个基于Linux内核的开放移动操作系统
 
 同时，这个系统本身也是开源的
@@ -22,10 +23,11 @@
 *	Java 8
 *	Gradle 2.13
 *	Intellij IDEA
+*	Docker
 
 ### 可能会加入的额外功能
-
- - Docker
+ 
+ - OpenShift
  - Auto Recovery
 
 许可协议
