@@ -2,12 +2,12 @@
   <library name="Gradle: org.springframework.cloud:spring-cloud-starter:1.1.2.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter/1.1.2.BUILD-SNAPSHOT/d71a13279fa7deb42bddf68686df040a88087b53/spring-cloud-starter-1.1.2.BUILD-SNAPSHOT.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter/1.1.2.BUILD-SNAPSHOT/875fd746f52b9954c1ef27e743eef9d5ba6a9f9b/spring-cloud-starter-1.1.2.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter/1.1.2.BUILD-SNAPSHOT/1ccee3c7f785f98279259be339d51e65c0babc53/spring-cloud-starter-1.1.2.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter/1.1.2.BUILD-SNAPSHOT/64e899eec6d12816b74a8af2fbb9804e2a002054/spring-cloud-starter-1.1.2.BUILD-SNAPSHOT-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter/1.1.2.BUILD-SNAPSHOT/d6a3f440bded5e532ed3c46bcf89521b38abe29b/spring-cloud-starter-1.1.2.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter/1.1.2.BUILD-SNAPSHOT/385ea1c1d79e27ae8e01cca9b978cf09fda74d2c/spring-cloud-starter-1.1.2.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

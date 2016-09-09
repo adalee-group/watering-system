@@ -23,10 +23,15 @@ import edu.hucare.repository.impl.UserImpl;
 @EActivity(R.layout.activity_login)
 public class LoginActivity extends Activity {
 
+    public static String host;
+
     public static User user;
 
 
     // UI references.
+    @ViewById
+    EditText etHost;
+
     @ViewById
     EditText etEmail;
 
@@ -36,6 +41,7 @@ public class LoginActivity extends Activity {
     @Click
     void btnSignIn() {
 
+        host = etHost.getText().toString();
 
         try {
             User origin = new User();
@@ -49,7 +55,7 @@ public class LoginActivity extends Activity {
             long time_count = 0;
 
             while (!doLogin.isSuccessful()) {
-                if (time_count>time_count) {
+                if (time_count > time_count) {
                     Toast.makeText(getApplicationContext(), "请求超时", Toast.LENGTH_SHORT).show();
                 }
                 Thread.sleep(500);
@@ -81,7 +87,7 @@ public class LoginActivity extends Activity {
         protected User doInBackground(User... users) {
             try {
 
-                final String url = "http://192.168.10.108:1984/user/";
+                final String url = "http://" + host + "/user/";
 
                 RestTemplate restTemplate = new RestTemplate();
 

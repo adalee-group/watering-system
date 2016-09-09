@@ -13,6 +13,7 @@ import edu.hucare.model.Schedule;
 import edu.hucare.model.TerminalDevice;
 import edu.hucare.model.User;
 import edu.hucare.repository.ScheduleRepository;
+import edu.hucare.watering.LoginActivity;
 
 /**
  * Created by kuzon on 16-9-8.
@@ -66,7 +67,7 @@ public class ScheduleImpl implements ScheduleRepository {
         protected Void doInBackground(TerminalDevice... devices) {
             try {
 
-                final String url = "http://192.168.10.108:1984/device/" + devices[0].getId() + "/schedule";
+                final String url = "http://" + LoginActivity.host + "/device/" + devices[0].getId() + "/schedule";
 
                 RestTemplate restTemplate = new RestTemplate();
 

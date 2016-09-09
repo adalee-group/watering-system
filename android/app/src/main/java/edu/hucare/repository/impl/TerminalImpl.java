@@ -55,6 +55,7 @@ public class TerminalImpl implements TerminalRepository {
 
     /**
      * Get all devices by RESTFul API
+     *
      * @author Kuzon Chen
      */
     class GetAllDevices extends AsyncTask<User, User, TerminalDevice[]> {
@@ -68,7 +69,7 @@ public class TerminalImpl implements TerminalRepository {
         protected TerminalDevice[] doInBackground(User... users) {
             try {
 
-                final String url = "http://192.168.10.108:1984/user/" + users[0].getId() + "/terminal";
+                final String url = "http://" + LoginActivity.host + "/user/" + users[0].getId() + "/terminal";
 
                 RestTemplate restTemplate = new RestTemplate();
 
@@ -86,6 +87,7 @@ public class TerminalImpl implements TerminalRepository {
 
     /**
      * Get One Device by RESTFul API
+     *
      * @author Kuzon Chen
      */
     class GetOneDevice extends AsyncTask<TerminalDevice, TerminalDevice, TerminalDevice> {
@@ -99,7 +101,7 @@ public class TerminalImpl implements TerminalRepository {
         protected TerminalDevice doInBackground(TerminalDevice... devices) {
             try {
 
-                final String url = "http://192.168.10.108:1984/device/" + devices[0].getId() + "/status";
+                final String url = "http://" + LoginActivity.host + "/device/" + devices[0].getId() + "/status";
 
                 RestTemplate restTemplate = new RestTemplate();
 

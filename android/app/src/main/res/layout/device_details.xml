@@ -9,13 +9,13 @@
         <TextView
             android:id="@+id/id_label"
             android:text="@string/schedule_label_id"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
             android:id="@+id/id_value"
             android:gravity="right"
             android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
     </TableRow>
 
     <TableRow>
@@ -23,13 +23,13 @@
         <TextView
             android:id="@+id/date_label"
             android:text="@string/schedule_label_date"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
             android:id="@+id/date_value"
             android:gravity="right"
             android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
     </TableRow>
 
     <TableRow>
@@ -37,12 +37,12 @@
         <TextView
             android:id="@+id/water_label"
             android:text="@string/schedule_label_water"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
             android:id="@+id/water_value"
             android:gravity="right"
             android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
     </TableRow>
 </TableLayout>
