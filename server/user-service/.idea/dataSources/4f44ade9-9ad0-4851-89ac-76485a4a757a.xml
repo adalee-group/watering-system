@@ -1,17 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="MySQL - water@chic.app">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
     <schema id="1" name="water">
       <visible>1</visible>
     </schema>
-    <schema id="2" name="homestead" />
-    <schema id="3" name="information_schema" />
-    <schema id="4" name="mysql" />
-    <schema id="5" name="performance_schema" />
-    <schema id="6" name="sys" />
-    <table id="7" parent="1" name="control" />
-    <table id="8" parent="1" name="schedule" />
-    <table id="9" parent="1" name="terminal" />
-    <table id="10" parent="1" name="users" />
+    <schema id="2" name="homestead"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="test"/>
+    <table id="7" parent="1" name="control"/>
+    <table id="8" parent="1" name="schedule"/>
+    <table id="9" parent="1" name="terminal"/>
+    <table id="10" parent="1" name="users"/>
     <column id="11" parent="7" name="id">
       <mandatory>1</mandatory>
       <data-type>bigint(20)|0</data-type>
@@ -25,7 +26,7 @@
     </column>
     <index id="14" parent="7" name="FK8qtbn9vnit58q09pl2rrje1ru">
       <columns>user_id</columns>
-      <desc-columns />
+      <desc-columns></desc-columns>
     </index>
     <key id="15" parent="7" name="PRIMARY">
       <columns>id</columns>
@@ -63,15 +64,15 @@
     </column>
     <index id="24" parent="8" name="FK6aa1j3rtybpr86ltq9t067g2y">
       <columns>terminal_id</columns>
-      <desc-columns />
+      <desc-columns></desc-columns>
     </index>
     <index id="25" parent="8" name="FKdn5svbxyacce1gpfiawk7iqtc">
       <columns>user_id</columns>
-      <desc-columns />
+      <desc-columns></desc-columns>
     </index>
     <index id="26" parent="8" name="FKs5wdm9gsk5hibbp0u75h4tkid">
       <columns>control_id</columns>
-      <desc-columns />
+      <desc-columns></desc-columns>
     </index>
     <key id="27" parent="8" name="PRIMARY">
       <columns>id</columns>
@@ -118,7 +119,7 @@
     </column>
     <index id="37" parent="9" name="FK9443q1h57bj8yertlhvkux44i">
       <columns>user_id</columns>
-      <desc-columns />
+      <desc-columns></desc-columns>
     </index>
     <key id="38" parent="9" name="PRIMARY">
       <columns>id</columns>

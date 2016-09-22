@@ -1,11 +1,14 @@
 package edu.hucare.repository.impl;
 
 import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Message;
 
 import org.androidannotations.annotations.EBean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
+import java.lang.ref.WeakReference;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -20,6 +23,26 @@ import edu.hucare.watering.LoginActivity;
  */
 @EBean
 public class TerminalImpl implements TerminalRepository {
+
+    private static final int LOAD_SUCCESS = 0x1;
+
+    private static class TerminalHandler extends Handler {
+        private final WeakReference<GetAllDevices> weakReference;
+
+        public TerminalHandler(GetAllDevices context) {
+            weakReference = new WeakReference<GetAllDevices>(context);
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            GetAllDevices terminal = weakReference.get();
+            if (terminal != null) {
+                switch (msg.what) {
+
+                }
+            }
+        }
+    }
 
     // All devices
     TerminalDevice terminals[];
@@ -60,6 +83,8 @@ public class TerminalImpl implements TerminalRepository {
      */
     class GetAllDevices extends AsyncTask<User, User, TerminalDevice[]> {
 
+        private final TerminalHandler handler = new TerminalHandler(this);
+
         private boolean isSuccessful = false;
 
         public boolean isSuccessful() {
@@ -67,20 +92,36 @@ public class TerminalImpl implements TerminalRepository {
         }
 
         protected TerminalDevice[] doInBackground(User... users) {
-            try {
 
-                final String url = "http://" + LoginActivity.host + "/user/" + users[0].getId() + "/terminal";
+            final String url = "http://" + LoginActivity.host + "/user/" + users[0].getId() + "/terminal";
 
-                RestTemplate restTemplate = new RestTemplate();
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
 
-                ResponseEntity<TerminalDevice[]> terminalDevices = restTemplate.getForEntity(url, TerminalDevice[].class);
-                terminals = terminalDevices.getBody();
-                isSuccessful = true;
-                return terminals;
-            } catch (Exception e) {
-                e.printStackTrace();
-                isSuccessful = false;
-            }
+                    RestTemplate restTemplate = new RestTemplate();
+
+                    ResponseEntity<TerminalDevice[]> terminalDevices = restTemplate.getForEntity(url, TerminalDevice[].class);
+                    terminals = terminalDevices.getBody();
+                    Message msg = handler.obtainMessage(LOAD_SUCCESS, terminals);
+                    handler.sendMessage(msg);
+                }
+            });
+
+//            try {
+//
+//                final String url = "http://" + LoginActivity.host + "/user/" + users[0].getId() + "/terminal";
+//
+//                RestTemplate restTemplate = new RestTemplate();
+//
+//                ResponseEntity<TerminalDevice[]> terminalDevices = restTemplate.getForEntity(url, TerminalDevice[].class);
+//                terminals = terminalDevices.getBody();
+//                isSuccessful = true;
+//                return terminals;
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//                isSuccessful = false;
+//            }
             return null;
         }
     }

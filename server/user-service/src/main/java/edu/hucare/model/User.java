@@ -96,4 +96,17 @@ public class User {
     public void setSchedules(Set<Schedule> schedules) {
         this.schedules = schedules;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", controlDevices=" + controlDevices +
+                ", terminalDevices=" + terminalDevices +
+                ", schedules=" + schedules +
+                '}';
+    }
 }

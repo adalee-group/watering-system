@@ -11,4 +11,6 @@ import edu.hucare.model.User;
  */
 public interface UserRepository {
     Set<User> findAll();
+
+    User findOne(String host, String email, String password);
 }

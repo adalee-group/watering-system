@@ -4,6 +4,7 @@ import edu.hucare.model.ControlDevice;
 import edu.hucare.model.TerminalDevice;
 import edu.hucare.model.User;
 import edu.hucare.repository.UserRepository;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,8 @@ import java.util.Set;
 @RestController
 //@RequestMapping(value = "/user")
 public class UserController {
+
+    private static Logger logger = Logger.getLogger(UserController.class);
 
     /**
      * User Repository
@@ -43,6 +46,8 @@ public class UserController {
     @RequestMapping(value = "", method = RequestMethod.POST)
     public User doLogin(@RequestBody User user) {
         User u = repository.findByEmail(user.getEmail().trim());
+        logger.info("origin -> " + user.toString());
+        logger.info("result -> " + u.toString());
         if (!u.equals(null) && u.getPassword().equals(user.getPassword())) {
             return u;
         } else {

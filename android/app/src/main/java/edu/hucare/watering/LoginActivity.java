@@ -15,6 +15,7 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.web.client.RestTemplate;
 
 import edu.hucare.model.User;
+import edu.hucare.repository.UserRepository;
 import edu.hucare.repository.impl.UserImpl;
 
 /**
@@ -42,36 +43,41 @@ public class LoginActivity extends Activity {
     void btnSignIn() {
 
         host = etHost.getText().toString();
+        String email = etEmail.getText().toString();
+        String password = etPassword.getText().toString();
 
-        try {
-            User origin = new User();
-            origin.setEmail(etEmail.getText().toString());
-            origin.setPassword(etPassword.getText().toString());
+        UserRepository repository = new UserImpl();
+        user = repository.findOne(host, email, password);
 
-            DoLogin doLogin = new DoLogin();
-            doLogin.execute(origin);
-
-            long time_out = 5000;
-            long time_count = 0;
-
-            while (!doLogin.isSuccessful()) {
-                if (time_count > time_count) {
-                    Toast.makeText(getApplicationContext(), "请求超时", Toast.LENGTH_SHORT).show();
-                }
-                Thread.sleep(500);
-                time_count += 500;
-            }
-
-            if (doLogin.isSuccessful()) {
-                Intent intent = new Intent(this, DeviceActivity_.class);
-                startActivity(intent);
-            } else {
-                Toast.makeText(getApplicationContext(), "用户名密码错误", Toast.LENGTH_SHORT).show();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            Toast.makeText(getApplicationContext(), "系统错误", Toast.LENGTH_SHORT).show();
-        }
+//        try {
+//            User origin = new User();
+//            origin.setEmail(etEmail.getText().toString());
+//            origin.setPassword(etPassword.getText().toString());
+//
+//            DoLogin doLogin = new DoLogin();
+//            doLogin.execute(origin);
+//
+//            long time_out = 5000;
+//            long time_count = 0;
+//
+//            while (!doLogin.isSuccessful()) {
+//                if (time_count > time_count) {
+//                    Toast.makeText(getApplicationContext(), "请求超时", Toast.LENGTH_SHORT).show();
+//                }
+//                Thread.sleep(500);
+//                time_count += 500;
+//            }
+//
+//            if (doLogin.isSuccessful()) {
+//                Intent intent = new Intent(this, DeviceActivity_.class);
+//                startActivity(intent);
+//            } else {
+//                Toast.makeText(getApplicationContext(), "用户名密码错误", Toast.LENGTH_SHORT).show();
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            Toast.makeText(getApplicationContext(), "系统错误", Toast.LENGTH_SHORT).show();
+//        }
 
 
     }

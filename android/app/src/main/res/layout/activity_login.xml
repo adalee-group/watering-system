@@ -17,7 +17,7 @@
         android:inputType="text"
         android:maxLines="1"
         android:singleLine="true"
-        android:text="li1191-29.members.linode.com:1984" />
+        android:text="172.25.254.3:1984" />
 
     <EditText
         android:id="@+id/etEmail"
